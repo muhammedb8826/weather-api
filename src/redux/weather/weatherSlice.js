@@ -13,7 +13,7 @@ const url = baseURL;
 export const getWeather = createAsyncThunk('weather/getWeather', async () => {
   try {
     const resp = await axios.get(url);
-    console.log(resp.json);
+    console.log(resp.data);
     return resp.data;
   } catch (error) {
     return error.message;
