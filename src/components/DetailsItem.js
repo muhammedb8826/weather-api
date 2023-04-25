@@ -10,6 +10,7 @@ export default function DetailsItem() {
       <Details
         key={Location.location.name}
         cloud={Location.current.cloud}
+        country={Location.location.country}
         conditionText={Location.current.condition.text}
         conditionIcon={Location.current.condition.icon}
         humidity={Location.current.humidity}

@@ -29,10 +29,28 @@ export default function Country() {
 
   return (
     <Container>
-      <p>{Location.location.country}</p>
-      <nav>
-        <Link to="/country/details">{Location.location.name}</Link>
-      </nav>
+      <h1>
+        {Location.location.name}
+        {' '}
+        Weather Forecast
+        {' '}
+        <span className="country">{Location.location.country}</span>
+      </h1>
+      <div className="weather-display">
+
+        <p>{Location.location.country}</p>
+
+      </div>
+      <div className="current">
+        <Link to="/country/details">
+          {Location.location.name}
+        </Link>
+        <span>
+          {' '}
+          {'>'}
+          {' '}
+        </span>
+      </div>
     </Container>
   );
 }
