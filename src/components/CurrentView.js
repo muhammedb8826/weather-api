@@ -13,7 +13,7 @@ export default function CurrentView({
   windDegree,
   tempreture,
 }) {
-  const url = `https:${conditionIcon}`;
+  const url = `http:${conditionIcon}`;
   return (
     <section className="current-container">
       <div className="current-city">

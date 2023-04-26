@@ -1,6 +1,6 @@
 .countries {
   width: 100%;
-  max-width: 500px;
+  max-width: 345px;
   color: white;
   border: 1px solid #f8f9fa;
   border-top: none;
@@ -16,7 +16,7 @@
 }
 
 .weather-display p {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 600;
   width: 50%;
   text-align: center;

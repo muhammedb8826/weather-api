@@ -61,9 +61,9 @@ export default function Country() {
           </Link>
         </li>
         <li className="detail-list">
-          <Link to="/country/history">
+          <Link to="/country/sports">
             <BsArrowRightCircle />
-            <span>History</span>
+            <span>Sports</span>
           </Link>
         </li>
         <li className="detail-list">
@@ -85,9 +85,9 @@ export default function Country() {
           </Link>
         </li>
         <li className="detail-list">
-          <Link to="/country/sports">
+          <Link to="/country/history">
             <BsArrowRightCircle />
-            <span>Sports</span>
+            <span>History</span>
           </Link>
         </li>
       </ul>

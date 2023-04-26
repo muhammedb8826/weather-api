@@ -6,3 +6,4 @@ export const future = 'http://api.weatherapi.com/v1/future.json?key=593c557b7df5
 export const astronomy = 'http://api.weatherapi.com/v1/astronomy.json?key=593c557b7df54b688db22828231904&q=Ethiopia&dt=2023-04-26';
 export const timezone = 'http://api.weatherapi.com/v1/timezone.json?key=593c557b7df54b688db22828231904&q=Ethiopia';
 export const sports = 'http://api.weatherapi.com/v1/sports.json?key=593c557b7df54b688db22828231904&q=Ethiopia';
+export const history = 'http://api.weatherapi.com/v1/history.json?key=593c557b7df54b688db22828231904&q=Ethiopia&dt=2010-01-01';

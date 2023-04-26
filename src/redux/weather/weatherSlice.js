@@ -12,6 +12,7 @@ const initialState = {
   Astronomy: [],
   TimeZone: [],
   Sports: [],
+  History: [],
   isLoading: true,
   error: null,
 };
@@ -207,7 +208,7 @@ const wetherSlice = createSlice({
       })
       .addCase(searchByCountryName.fulfilled, (state, { payload }) => ({
         ...state,
-        Location: payload,
+        Current: payload,
         isLoading: false,
       }))
       .addCase(searchByCountryName.rejected, (state, { payload }) => ({

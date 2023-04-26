@@ -7,7 +7,9 @@ import { BsChevronLeft } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import {
   getAstronomy,
-  getCurrent, getForecast, getFuture, getSearch, getSports, getTimeZone, searchByCountryName,
+  getCurrent,
+  getForecast,
+  getFuture, getSearch, getSports, getTimeZone, searchByCountryName,
 } from '../redux/weather/weatherSlice';
 
 export default function Header() {
