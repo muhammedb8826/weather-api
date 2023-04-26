@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import '../styles/Current.css';
 
-export default function Current({
+export default function CurrentView({
   cloud,
   name,
   conditionText,
@@ -33,32 +33,47 @@ export default function Current({
         </li>
         <li className="current-list">
           <Link to="/country/forecast">
-            <BsArrowRightCircle />
-            <span>{conditionText}</span>
+            <p>Condition</p>
+            <div>
+              <span>{conditionText}</span>
+              <BsArrowRightCircle />
+            </div>
           </Link>
         </li>
         <li className="current-list">
           <Link to="/country/search">
-            <BsArrowRightCircle />
-            <span>{humidity}</span>
+            <p>Humidity</p>
+            <div>
+              <span>{humidity}</span>
+              <BsArrowRightCircle />
+            </div>
           </Link>
         </li>
         <li className="current-list">
           <Link to="/country/history">
-            <BsArrowRightCircle />
-            <span>{lastUpdated}</span>
+            <p>Last Updatet Time</p>
+            <div>
+              <span>{lastUpdated}</span>
+              <BsArrowRightCircle />
+            </div>
           </Link>
         </li>
         <li className="current-list">
           <Link to="/country/future">
-            <BsArrowRightCircle />
-            <span>{windDegree}</span>
+            <p>Wind Degree</p>
+            <div>
+              <span>{windDegree}</span>
+              <BsArrowRightCircle />
+            </div>
           </Link>
         </li>
         <li className="current-list">
           <Link to="/country/astronomy">
-            <BsArrowRightCircle />
-            <span>{tempreture}</span>
+            <p>Tempreture</p>
+            <div>
+              <span>{tempreture}</span>
+              <BsArrowRightCircle />
+            </div>
           </Link>
         </li>
       </ul>
@@ -66,11 +81,11 @@ export default function Current({
   );
 }
 
-Current.propTypes = { cloud: PropTypes.number.isRequired };
-Current.propTypes = { name: PropTypes.string.isRequired };
-Current.propTypes = { conditionText: PropTypes.string.isRequired };
-Current.propTypes = { conditionIcon: PropTypes.string.isRequired };
-Current.propTypes = { humidity: PropTypes.number.isRequired };
-Current.propTypes = { lastUpdated: PropTypes.string.isRequired };
-Current.propTypes = { windDegree: PropTypes.number.isRequired };
-Current.propTypes = { tempreture: PropTypes.number.isRequired };
+CurrentView.propTypes = { cloud: PropTypes.number.isRequired };
+CurrentView.propTypes = { name: PropTypes.string.isRequired };
+CurrentView.propTypes = { conditionText: PropTypes.string.isRequired };
+CurrentView.propTypes = { conditionIcon: PropTypes.string.isRequired };
+CurrentView.propTypes = { humidity: PropTypes.number.isRequired };
+CurrentView.propTypes = { lastUpdated: PropTypes.string.isRequired };
+CurrentView.propTypes = { windDegree: PropTypes.number.isRequired };
+CurrentView.propTypes = { tempreture: PropTypes.number.isRequired };

@@ -1,21 +1,21 @@
 import { useSelector } from 'react-redux';
-import Current from './Current';
+import CurrentView from './CurrentView';
 
 export default function DetailsItem() {
-  const { Location } = useSelector((state) => state.weather);
+  const { Current } = useSelector((state) => state.weather);
 
   return (
     <>
-      <Current
-        key={Location.location.name}
-        cloud={Location.current.cloud}
-        name={Location.location.name}
-        conditionText={Location.current.condition.text}
-        conditionIcon={Location.current.condition.icon}
-        humidity={Location.current.humidity}
-        lastUpdated={Location.current.last_updated}
-        windDegree={Location.current.wind_degree}
-        tempreture={Location.current.temp_c}
+      <CurrentView
+        key={Current.location.name}
+        cloud={Current.current.cloud}
+        name={Current.location.name}
+        conditionText={Current.current.condition.text}
+        conditionIcon={Current.current.condition.icon}
+        humidity={Current.current.humidity}
+        lastUpdated={Current.current.last_updated}
+        windDegree={Current.current.wind_degree}
+        tempreture={Current.current.temp_c}
       />
     </>
   );

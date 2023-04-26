@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Country.css';
 
 export default function Country() {
-  const { Location, isLoading, error } = useSelector((state) => state.weather);
+  const { Current, isLoading, error } = useSelector((state) => state.weather);
   if (isLoading) {
     return (
       <Button variant="primary" disabled>
@@ -33,9 +33,9 @@ export default function Country() {
   return (
     <section className="countries">
       <div className="weather-display">
-        <p>{Location.location.country}</p>
+        <p>{Current.location.country}</p>
         <p className="description">
-          {Location.location.name}
+          {Current.location.name}
           {' '}
           Weather Forecast
         </p>
