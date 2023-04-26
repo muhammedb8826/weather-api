@@ -3,13 +3,14 @@ import { useDispatch } from 'react-redux';
 import { Button, Form } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import { getWeather, searchByCountryName } from '../redux/weather/weatherSlice';
+import { getCountry, getWeather, searchByCountryName } from '../redux/weather/weatherSlice';
 
 export default function Header() {
   const [name, setName] = useState('');
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getWeather());
+    dispatch(getCountry());
   }, [dispatch]);
 
   const handleClick = (e) => {
@@ -24,12 +25,12 @@ export default function Header() {
 
   return (
     <header>
-      <Navbar bg="light" expand="lg">
-        <Container fluid>
-          <Navbar.Brand href="/">
+      <Navbar className="nav" expand="lg">
+        <Container fluid className="">
+          <Navbar.Brand className="brand" href="/">
             Weather API
           </Navbar.Brand>
-          <Form className="d-flex w-50">
+          <Form className="d-flex search-input">
             <Form.Control
               type="search"
               placeholder="Search"
@@ -38,7 +39,7 @@ export default function Header() {
               onChange={handleChange}
               value={name}
             />
-            <Button variant="outline-success" onClick={handleClick}>Search</Button>
+            <Button variant="outline-success search-btn border border-1" onClick={handleClick}>Search</Button>
           </Form>
         </Container>
       </Navbar>
