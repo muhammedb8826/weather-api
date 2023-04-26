@@ -100,7 +100,7 @@ code {
   width: 100px;
 }
 
-@media (max-width: 379px) {
+@media (max-width: 400px) {
   .search-input {
     width: 100%;
   }

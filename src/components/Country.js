@@ -1,3 +1,4 @@
+import { BsArrowRightCircle } from 'react-icons/bs';
 import {
   Badge, Button, Spinner,
 } from 'react-bootstrap';
@@ -42,43 +43,51 @@ export default function Country() {
       <p className="separator">Weather Details</p>
       <ul className="details">
         <li>
-          <Link to="/country/details">
-            Current
+          <Link to="/country/current">
+            <BsArrowRightCircle />
+            <span>Current</span>
           </Link>
         </li>
         <li>
-          <Link to="/country/details">
-            Forecast
+          <Link to="/country/forecast">
+            <BsArrowRightCircle />
+            <span>Forecast</span>
           </Link>
         </li>
         <li>
-          <Link to="/country/details">
-            Search/Autocomplete
+          <Link to="/country/search">
+            <BsArrowRightCircle />
+            <span>Search/Autocomplete</span>
           </Link>
         </li>
         <li>
-          <Link to="/country/details">
-            History
+          <Link to="/country/history">
+            <BsArrowRightCircle />
+            <span>History</span>
           </Link>
         </li>
         <li>
-          <Link to="/country/details">
-            Future
+          <Link to="/country/future">
+            <BsArrowRightCircle />
+            <span>Future</span>
           </Link>
         </li>
         <li>
-          <Link to="/country/details">
-            Astronomy
+          <Link to="/country/astronomy">
+            <BsArrowRightCircle />
+            <span>Astronomy</span>
           </Link>
         </li>
         <li>
-          <Link to="/country/details">
-            Time Zone
+          <Link to="/country/timezone">
+            <BsArrowRightCircle />
+            <span>Time Zone</span>
           </Link>
         </li>
         <li>
-          <Link to="/country/details">
-            Sports
+          <Link to="/country/sports">
+            <BsArrowRightCircle />
+            <span>Sports</span>
           </Link>
         </li>
       </ul>
