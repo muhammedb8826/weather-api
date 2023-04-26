@@ -15,14 +15,14 @@ export default function Current({
 }) {
   const url = `https:${conditionIcon}`;
   return (
-    <section className="countries">
-      <div className="weather-display">
+    <section className="current-container">
+      <div className="current-city">
+        <img src={url} alt="cloud" />
         <p>{name}</p>
-        <img className="description" src={url} alt="cloud" />
       </div>
       <p className="separator">Current Details</p>
       <ul className="current-details">
-        <li>
+        <li className="current-list">
           <Link to="/country/current">
             <p>Cloud</p>
             <div>
@@ -31,31 +31,31 @@ export default function Current({
             </div>
           </Link>
         </li>
-        <li>
+        <li className="current-list">
           <Link to="/country/forecast">
             <BsArrowRightCircle />
             <span>{conditionText}</span>
           </Link>
         </li>
-        <li>
+        <li className="current-list">
           <Link to="/country/search">
             <BsArrowRightCircle />
             <span>{humidity}</span>
           </Link>
         </li>
-        <li>
+        <li className="current-list">
           <Link to="/country/history">
             <BsArrowRightCircle />
             <span>{lastUpdated}</span>
           </Link>
         </li>
-        <li>
+        <li className="current-list">
           <Link to="/country/future">
             <BsArrowRightCircle />
             <span>{windDegree}</span>
           </Link>
         </li>
-        <li>
+        <li className="current-list">
           <Link to="/country/astronomy">
             <BsArrowRightCircle />
             <span>{tempreture}</span>

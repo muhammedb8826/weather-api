@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { Button, Form } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import { BsChevronLeft } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 import { getCountry, getWeather, searchByCountryName } from '../redux/weather/weatherSlice';
 
 export default function Header() {
@@ -26,10 +28,11 @@ export default function Header() {
   return (
     <header>
       <Navbar className="nav" expand="lg">
-        <Container fluid className="">
-          <Navbar.Brand className="brand" href="/">
-            Weather API
-          </Navbar.Brand>
+        <Container className="">
+          <Link to="/" className="go-back">
+            <BsChevronLeft />
+          </Link>
+
           <Form className="d-flex search-input">
             <Form.Control
               type="search"

@@ -1,8 +1,8 @@
 .countries {
   width: 100%;
-  max-width: 768px;
+  max-width: 500px;
   color: white;
-  border: 2px solid #f8f9fa;
+  border: 1px solid #f8f9fa;
   border-top: none;
 }
 
@@ -10,8 +10,7 @@
   height: 250px;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
 }
@@ -19,10 +18,12 @@
 .weather-display p {
   font-size: 2rem;
   font-weight: 600;
+  width: 50%;
+  text-align: center;
 }
 
 .weather-display .description {
-  font-size: 1rem;
+  font-size: 1.5em;
 }
 
 .separator {
@@ -41,7 +42,7 @@
   margin: 0;
 }
 
-.details li {
+.details .detail-list {
   width: 50%;
   padding: 1rem;
   height: 150px;
@@ -50,15 +51,15 @@
   cursor: pointer;
 }
 
-li:nth-child(4n+2) {
+.detail-list:nth-child(4n+2) {
   background-color: #cd4177;
 }
 
-li:nth-child(4n+3) {
+.detail-list:nth-child(4n+3) {
   background-color: #dc4782;
 }
 
-li a {
+.detail-list a {
   text-decoration: none;
   color: white;
   width: 100%;
@@ -67,8 +68,10 @@ li a {
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-end;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
-li a:hover {
+.detail-list a:hover {
   color: wheat;
 }

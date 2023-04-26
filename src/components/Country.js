@@ -42,49 +42,49 @@ export default function Country() {
       </div>
       <p className="separator">Weather Details</p>
       <ul className="details">
-        <li>
+        <li className="detail-list">
           <Link to="/country/current">
             <BsArrowRightCircle />
             <span>Current</span>
           </Link>
         </li>
-        <li>
+        <li className="detail-list">
           <Link to="/country/forecast">
             <BsArrowRightCircle />
             <span>Forecast</span>
           </Link>
         </li>
-        <li>
+        <li className="detail-list">
           <Link to="/country/search">
             <BsArrowRightCircle />
             <span>Search/Autocomplete</span>
           </Link>
         </li>
-        <li>
+        <li className="detail-list">
           <Link to="/country/history">
             <BsArrowRightCircle />
             <span>History</span>
           </Link>
         </li>
-        <li>
+        <li className="detail-list">
           <Link to="/country/future">
             <BsArrowRightCircle />
             <span>Future</span>
           </Link>
         </li>
-        <li>
+        <li className="detail-list">
           <Link to="/country/astronomy">
             <BsArrowRightCircle />
             <span>Astronomy</span>
           </Link>
         </li>
-        <li>
+        <li className="detail-list">
           <Link to="/country/timezone">
             <BsArrowRightCircle />
             <span>Time Zone</span>
           </Link>
         </li>
-        <li>
+        <li className="detail-list">
           <Link to="/country/sports">
             <BsArrowRightCircle />
             <span>Sports</span>
