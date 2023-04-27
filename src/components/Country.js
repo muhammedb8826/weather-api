@@ -1,12 +1,13 @@
+import { BsArrowRightCircle } from 'react-icons/bs';
 import {
-  Badge, Button, Container, Spinner,
+  Badge, Button, Spinner,
 } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import '../styles/Country.css';
 
 export default function Country() {
-  const { Location, isLoading, error } = useSelector((state) => state.weather);
-
+  const { Current, isLoading, error } = useSelector((state) => state.weather);
   if (isLoading) {
     return (
       <Button variant="primary" disabled>
@@ -23,34 +24,73 @@ export default function Country() {
   }
   if (error) {
     return (
-      <Badge bg="danger">Something went wrong</Badge>
+      <>
+        <Badge bg="danger">{error}</Badge>
+      </>
     );
   }
 
   return (
-    <Container>
-      <h1>
-        {Location.location.name}
-        {' '}
-        Weather Forecast
-        {' '}
-        <span className="country">{Location.location.country}</span>
-      </h1>
+    <section className="countries">
       <div className="weather-display">
-
-        <p>{Location.location.country}</p>
-
-      </div>
-      <div className="current">
-        <Link to="/country/details">
-          {Location.location.name}
-        </Link>
-        <span>
+        <p>{Current.location.country}</p>
+        <p className="description">
+          {Current.location.name}
           {' '}
-          {'>'}
-          {' '}
-        </span>
+          Weather Forecast
+        </p>
       </div>
-    </Container>
+      <p className="separator">Weather Details</p>
+      <ul className="details">
+        <li className="detail-list">
+          <Link to="/country/current">
+            <BsArrowRightCircle />
+            <span>Current</span>
+          </Link>
+        </li>
+        <li className="detail-list">
+          <Link to="/country/forecast">
+            <BsArrowRightCircle />
+            <span>Forecast</span>
+          </Link>
+        </li>
+        <li className="detail-list">
+          <Link to="/country/search">
+            <BsArrowRightCircle />
+            <span>Search/Autocomplete</span>
+          </Link>
+        </li>
+        <li className="detail-list">
+          <Link to="/country/sports">
+            <BsArrowRightCircle />
+            <span>Sports</span>
+          </Link>
+        </li>
+        <li className="detail-list">
+          <Link to="/country/future">
+            <BsArrowRightCircle />
+            <span>Future</span>
+          </Link>
+        </li>
+        <li className="detail-list">
+          <Link to="/country/astronomy">
+            <BsArrowRightCircle />
+            <span>Astronomy</span>
+          </Link>
+        </li>
+        <li className="detail-list">
+          <Link to="/country/timezone">
+            <BsArrowRightCircle />
+            <span>Time Zone</span>
+          </Link>
+        </li>
+        <li className="detail-list">
+          <Link to="/country/history">
+            <BsArrowRightCircle />
+            <span>History</span>
+          </Link>
+        </li>
+      </ul>
+    </section>
   );
 }
