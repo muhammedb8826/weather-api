@@ -15,7 +15,7 @@ export default function CurrentView({
 }) {
   const url = `http:${conditionIcon}`;
   return (
-    <section className="current-container">
+    <>
       <div className="current-city">
         <img src={url} alt="cloud" />
         <p>{name}</p>
@@ -77,7 +77,7 @@ export default function CurrentView({
           </Link>
         </li>
       </ul>
-    </section>
+    </>
   );
 }
 
