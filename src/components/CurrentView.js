@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import '../styles/Current.css';
 
@@ -23,58 +22,58 @@ export default function CurrentView({
       <p className="separator">Current Details</p>
       <ul className="current-details">
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>Cloud</p>
-            <div>
+            <div className="value-container">
               <span>{cloud}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/forecast">
+          <div>
             <p>Condition</p>
-            <div>
+            <div className="value-container">
               <span>{conditionText}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/search">
+          <div>
             <p>Humidity</p>
-            <div>
+            <div className="value-container">
               <span>{humidity}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/history">
+          <div>
             <p>Last Updatet Time</p>
-            <div>
+            <div className="value-container">
               <span>{lastUpdated}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/future">
+          <div>
             <p>Wind Degree</p>
-            <div>
+            <div className="value-container">
               <span>{windDegree}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/astronomy">
+          <div>
             <p>Tempreture</p>
-            <div>
+            <div className="value-container">
               <span>{tempreture}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
       </ul>
     </>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 export default function Forecast() {
   const { Forecast } = useSelector((state) => state.weather);
@@ -15,58 +14,58 @@ export default function Forecast() {
       <p className="separator">Forecast Details</p>
       <ul className="current-details">
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>Average Humidity</p>
-            <div>
+            <div className="value-container">
               <span>{Forecast.forecastday[0].day.avghumidity}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/forecast">
+          <div>
             <p>Average Tempreture</p>
-            <div>
+            <div className="value-container">
               <span>{Forecast.forecastday[0].day.avgtemp_c}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/search">
+          <div>
             <p>Average Miles</p>
-            <div>
+            <div className="value-container">
               <span>{Forecast.forecastday[0].day.avgvis_miles}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/history">
+          <div>
             <p>UV</p>
-            <div>
+            <div className="value-container">
               <span>{Forecast.forecastday[0].day.uv}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/future">
+          <div>
             <p>Chance of Rain</p>
-            <div>
+            <div className="value-container">
               <span>{Forecast.forecastday[0].day.daily_chance_of_rain}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/astronomy">
+          <div>
             <p>Chance of Snow</p>
-            <div>
+            <div className="value-container">
               <span>{Forecast.forecastday[0].day.daily_chance_of_snow}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
       </ul>
     </section>

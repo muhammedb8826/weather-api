@@ -1,7 +1,6 @@
 import React from 'react';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 export default function TimeZone() {
   const { TimeZone } = useSelector((state) => state.weather);
@@ -14,31 +13,31 @@ export default function TimeZone() {
       <p className="separator">Timezone Details</p>
       <ul className="current-details">
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>Country</p>
-            <div>
+            <div className="value-container">
               <span>{TimeZone.location.country}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/forecast">
+          <div>
             <p>City</p>
-            <div>
+            <div className="value-container">
               <span>{TimeZone.location.name}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/search">
+          <div>
             <p>Local Time</p>
-            <div>
+            <div className="value-container">
               <span>{TimeZone.location.localtime}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
       </ul>
     </section>

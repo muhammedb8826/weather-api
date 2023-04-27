@@ -1,7 +1,6 @@
 import React from 'react';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 export default function Search() {
   const { Search } = useSelector((state) => state.weather);
@@ -15,40 +14,40 @@ export default function Search() {
       <p className="separator">Search/Autocomplete Details</p>
       <ul className="current-details">
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>ID</p>
-            <div>
+            <div className="value-container">
               <span>{Search[0].id}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/forecast">
+          <div>
             <p>Latitude</p>
-            <div>
+            <div className="value-container">
               <span>{Search[0].lat}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/search">
+          <div>
             <p>Longitude</p>
-            <div>
+            <div className="value-container">
               <span>{Search[0].lon}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/history">
+          <div>
             <p>URL</p>
-            <div>
+            <div className="value-container">
               <span>{Search[0].url}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
       </ul>
     </section>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 export default function Astronomy() {
   const { Forecast, Astronomy } = useSelector((state) => state.weather);
@@ -15,58 +14,58 @@ export default function Astronomy() {
       <p className="separator">Astronomy Details</p>
       <ul className="current-details">
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>Sunrise</p>
-            <div>
+            <div className="value-container">
               <span>{Astronomy.astro.sunrise}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/forecast">
+          <div>
             <p>Sunset</p>
-            <div>
+            <div className="value-container">
               <span>{Astronomy.astro.sunset}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/search">
+          <div>
             <p>Moonrise</p>
-            <div>
+            <div className="value-container">
               <span>{Astronomy.astro.moonrise}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/history">
+          <div>
             <p>Moonset</p>
-            <div>
+            <div className="value-container">
               <span>{Astronomy.astro.moonset}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/future">
+          <div>
             <p>Moon Phase</p>
-            <div>
+            <div className="value-container">
               <span>{Astronomy.astro.moon_phase}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/astronomy">
+          <div>
             <p>Moon Illumination</p>
-            <div>
+            <div className="value-container">
               <span>{Astronomy.astro.moon_illumination}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
       </ul>
     </section>

@@ -42,29 +42,29 @@
   background-color: #cd4177;
 }
 
-.current-list a {
+.current-list div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2em 1em;
   color: white;
-  text-decoration: none;
 }
 
-.current-list a > p {
+.current-list div > p {
   margin: 0;
 }
 
-.current-list a > div {
+.current-list div > .value-container {
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.current-list a > div span {
+.current-list div > .value-container span {
   margin-right: 0.5em;
 }
 
-.current-list a:hover {
+.current-list div:hover {
   color: wheat;
 }

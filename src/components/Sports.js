@@ -1,7 +1,6 @@
 import React from 'react';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 export default function Sports() {
   const { Sports } = useSelector((state) => state.weather);
@@ -15,49 +14,49 @@ export default function Sports() {
       <p className="separator">Football Details</p>
       <ul className="current-details">
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>Stadium</p>
-            <div>
+            <div className="value-container">
               <span>{Sports.football[0].stadium}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>Country</p>
-            <div>
+            <div className="value-container">
               <span>{Sports.football[0].country}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>Tournament</p>
-            <div>
+            <div className="value-container">
               <span>{Sports.football[0].tournament}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>Start</p>
-            <div>
+            <div className="value-container">
               <span>{Sports.football[0].start}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>Match</p>
-            <div>
+            <div className="value-container">
               <span>{Sports.football[0].match}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
       </ul>
     </section>

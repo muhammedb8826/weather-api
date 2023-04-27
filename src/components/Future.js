@@ -1,7 +1,6 @@
 import React from 'react';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 export default function Future() {
   const { Future } = useSelector((state) => state.weather);
@@ -15,31 +14,31 @@ export default function Future() {
       <p className="separator">Future Details</p>
       <ul className="current-details">
         <li className="current-list">
-          <Link to="/country/current">
+          <div>
             <p>Maximum Temperature</p>
-            <div>
+            <div className="value-container">
               <span>{Future.forecastday[0].day.maxtemp_c}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/forecast">
+          <div>
             <p>Minimum Tempreture</p>
-            <div>
+            <div className="value-container">
               <span>{Future.forecastday[0].day.mintemp_c}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
         <li className="current-list">
-          <Link to="/country/search">
+          <div>
             <p>Date</p>
-            <div>
+            <div className="value-container">
               <span>{Future.forecastday[0].date}</span>
               <BsArrowRightCircle />
             </div>
-          </Link>
+          </div>
         </li>
       </ul>
     </section>
