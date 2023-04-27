@@ -22,7 +22,6 @@ const url = baseURL;
 export const getCurrent = createAsyncThunk('current/getCurrent', async (_, { rejectWithValue }) => {
   try {
     const resp = await axios.get(url);
-
     return resp.data;
   } catch (error) {
     return rejectWithValue(error.response.data.error.message);
@@ -72,7 +71,6 @@ export const getAstronomy = createAsyncThunk('astronomy/getAstronomy', async (_,
 export const getTimeZone = createAsyncThunk('timezone/getTimeZone', async (_, { rejectWithValue }) => {
   try {
     const resp = await axios.get(timezone);
-
     return resp.data;
   } catch (error) {
     return rejectWithValue(error.response.data.error.message);
