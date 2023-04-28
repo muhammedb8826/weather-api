@@ -25,7 +25,7 @@
 }
 
 .separator {
-  background-color: #df4783;
+  background-color: #dc4681;
   padding-left: 1rem;
   margin: 0;
 }
@@ -50,7 +50,7 @@
 }
 
 .detail-list:nth-child(4n+2) {
-  background-color: #cd4177;
+  background-color: #ce4177;
 }
 
 .detail-list:nth-child(4n+3) {

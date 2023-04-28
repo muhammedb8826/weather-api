@@ -35,11 +35,11 @@
 .current-details .current-list {
   width: 100%;
   cursor: pointer;
-  background-color: #dc4782;
+  background-color: #e94b89;
 }
 
 .current-list:nth-child(even) {
-  background-color: #cd4177;
+  background-color: #d1457b;
 }
 
 .current-list div {

@@ -1,70 +1,221 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+  <h3><b>Muhammed B | WeatherAPI</b></h3>
 
-In the project directory, you can run:
+</div>
+<!-- TABLE OF CONTENTS -->
 
-### `npm start`
+# 📗 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- PROJECT DESCRIPTION -->
 
-### `npm test`
+# 📖 [CurrencyExplorer] <a name="about-project"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+.com provides access to free weather and geo data via a JSON/XML restful API.
 
-### `npm run build`
+### WeatherAPI is a comprehensive online platform that provides Real Time, Forecasted, Future, Marine and Historical Weather.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Built With <a name="built-with"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML
+- CSS
+- JavaScript
+- NPM
+- React
+- React router
+- Redux
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tech Stack <a name="tech-stack"></a>
 
-### `npm run eject`
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="">React</a></li>
+  </ul>
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="">External API</a></li>
+  </ul>
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="">External API</a></li>
+  </ul>
+</details>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- Features -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Key Features <a name="key-features"></a>
 
-## Learn More
+- **[Display Weather iformation of the searched country ]**
+- **[Search for Country or City]**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- LIVE DEMO -->
 
-### Code Splitting
+## 🚀 Live Demo <a name="live-demo"></a>
+> Coming Soon !
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- GETTING STARTED -->
 
-### Making a Progressive Web App
+## 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Prerequisites
 
-### Advanced Configuration
+In order to run this project you need:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [ ] A PC running any operating system like Windows, Linux, or MacOS
+- [ ] An Internet connection
+- [ ] Git installed
+- [ ] Node.js
+- [ ] Knowledge of some basic Git commands
+
+### Setup
+
+- [ ] Link your PC to GitHub
+- [ ] Clone this repository to your desired folder:
+
+Clone this repository to your desired folder:
+
+```git clone https://github.com/muhammedb8826/weather-api```
+
+- [ ] Open the file in your code editor
+
+### Install
+
+- [ ] Setup JavaScript + CSS + HTML linter
+
+Run the following codes in your project folder in your IDE:
+
+```
+npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x @babel/preset-env@7.x  @babel/preset-react@7.x
+```
+
+```
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
+
+- [ ] project dependencies
+
+```
+npm install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+Start the server
+
+```
+npm start
+```
+
+### Run tests
+
+To run Stylelint , Jest and ESLint tests, run the following commands respectively:
+
+```
+npm run: npx eslint "**/*.{js,jsx}"
+```
+
+```
+npx stylelint "**/*.{css,scss}"
+```
+
+```
+npx run test
+```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To deploy this project run
 
-### `npm run build` fails to minify
+```
+npm run deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 Muhammed B
+
+- GitHub: [@githubhandle](https://github.com/muhammedb8826)
+- Twitter: [@twitterhandle](https://twitter.com/muhammedb6626)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/muhammedb8826/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Auto search]**
+- [ ] **[Display searched data]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+You can contribute to this project by writing an issue <a href="https://github.com/muhammedb8826/weather-api" >here</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project please leave a ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse and Youtube for their help
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
