@@ -13,7 +13,7 @@ const mockCountryItem = {
   humidity: 'humidity',
   lastUpdated: 'lastUpdated',
   windDegree: 'windDegree',
-  tempreture: '10',
+  tempreture: 10,
 };
 
 describe('Renders without crashing', (() => {
@@ -30,10 +30,3 @@ describe('Renders without crashing', (() => {
     expect(tree).toMatchSnapshot();
   });
 }));
-
-// test('renders current view component', () => {
-
-//   const { getByText } = renderer(<CurrentView country={mockCountryItem} />);
-//   const linkElement = getByText(/country/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
