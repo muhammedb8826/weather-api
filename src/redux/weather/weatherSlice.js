@@ -1,8 +1,14 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import {
-  baseURL, forecast, search, future, astronomy, timezone, sports,
-} from '../API';
+
+// const APIkey = '593c557b7df54b688db22828231904';
+const baseURL = 'https://api.weatherapi.com/v1/current.json?key=593c557b7df54b688db22828231904&q=Ethiopia&aqi=no';
+const forecast = 'https://api.weatherapi.com/v1/forecast.json?key=593c557b7df54b688db22828231904&q=Ethiopia&days=1&aqi=no&alerts=no';
+const search = 'https://api.weatherapi.com/v1/search.json?key=593c557b7df54b688db22828231904&q=Ethiopia';
+const future = 'https://api.weatherapi.com/v1/future.json?key=593c557b7df54b688db22828231904&q=Ethiopia&dt=2023-05-26';
+const astronomy = 'https://api.weatherapi.com/v1/astronomy.json?key=593c557b7df54b688db22828231904&q=Ethiopia&dt=2023-04-26';
+const timezone = 'https://api.weatherapi.com/v1/timezone.json?key=593c557b7df54b688db22828231904&q=Ethiopia';
+const sports = 'https://api.weatherapi.com/v1/sports.json?key=593c557b7df54b688db22828231904&q=Ethiopia';
 
 const initialState = {
   Current: [],
@@ -102,10 +108,11 @@ const wetherSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(getCurrent.pending, (state) => {
-        state.isLoading = true;
-        state.error = null;
-      })
+      .addCase(getCurrent.pending, (state) => ({
+        ...state,
+        isLoading: true,
+        error: null,
+      }))
       .addCase(getCurrent.fulfilled, (state, { payload }) => ({
         ...state,
         Current: payload,

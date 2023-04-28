@@ -68,7 +68,7 @@ export default function CurrentView({
         </li>
         <li className="current-list">
           <div>
-            <p>Tempreture</p>
+            <p>Tempereture</p>
             <div className="value-container">
               <span>{tempreture}</span>
               <BsArrowRightCircle />
