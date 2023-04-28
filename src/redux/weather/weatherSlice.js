@@ -89,7 +89,7 @@ export const getSports = createAsyncThunk('sports/getSports', async (_, { reject
 
 export const searchByCountryName = createAsyncThunk('search/searchByCountryName', async (name, { rejectWithValue }) => {
   try {
-    const resp = await axios.get(`http://api.weatherapi.com/v1/current.json?key=593c557b7df54b688db22828231904&q=${name}&aqi=no`);
+    const resp = await axios.get(`https://api.weatherapi.com/v1/current.json?key=593c557b7df54b688db22828231904&q=${name}&aqi=no`);
     return resp.data;
   } catch (error) {
     return rejectWithValue(error.response.data.error.message);
