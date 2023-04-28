@@ -33,9 +33,9 @@ export default function Country() {
   return (
     <section className="countries">
       <div className="weather-display">
-        <p>{Current.location.country}</p>
+        <p>{Current.location?.country}</p>
         <p className="description">
-          {Current.location.name}
+          {Current.location?.name}
           {' '}
           Weather Forecast
         </p>

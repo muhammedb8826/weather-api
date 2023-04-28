@@ -1,10 +1,11 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
+
 import {
   baseURL, forecast, search, future, astronomy, timezone, sports,
 } from '../API';
 
-const initialState = {
+export const initialState = {
   Current: [],
   Forecast: [],
   Search: [],
@@ -102,10 +103,11 @@ const wetherSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(getCurrent.pending, (state) => {
-        state.isLoading = true;
-        state.error = null;
-      })
+      .addCase(getCurrent.pending, (state) => ({
+        ...state,
+        isLoading: true,
+        error: null,
+      }))
       .addCase(getCurrent.fulfilled, (state, { payload }) => ({
         ...state,
         Current: payload,
