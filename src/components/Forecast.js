@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 
 export default function Forecast() {
   const { Forecast } = useSelector((state) => state.weather);
-  console.log(Forecast);
   const url = `http:${Forecast.forecastday[0].day.condition.icon}`;
   return (
     <section className="current-container">

@@ -19,7 +19,9 @@ const forecastday = [{
 
 describe('It should render the components', () => {
   it('should render Forecast component', () => {
-    const screen = renderWithProviders(<Forecast />, {preloadedState: {weather: {Forecast: forecastday}}})
-    screen.debug();
+    const screen = renderWithProviders(<Forecast />,
+      { preloadedState: { weather: { Forecast: { forecastday } } } });
+    expect(screen.getByText('Average Humidity')).toBeInTheDocument();
+    expect(screen.getByText('Average Tempreture')).toBeInTheDocument();
   });
 });
