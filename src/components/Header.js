@@ -5,24 +5,13 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { BsChevronLeft } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import {
-  getAstronomy,
-  getCurrent,
-  getForecast,
-  getFuture, getSearch, getSports, getTimeZone, searchByCountryName,
-} from '../redux/weather/weatherSlice';
+import { getCurrent, searchByCountryName } from '../redux/weather/weatherSlice';
 
 export default function Header() {
   const [name, setName] = useState('');
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCurrent());
-    dispatch(getForecast());
-    dispatch(getSearch());
-    dispatch(getFuture());
-    dispatch(getAstronomy());
-    dispatch(getTimeZone());
-    dispatch(getSports());
   }, [dispatch]);
 
   const handleClick = (e) => {
