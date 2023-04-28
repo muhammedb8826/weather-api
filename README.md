@@ -30,7 +30,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [CurrencyExplorer] <a name="about-project"></a>
+# 📖 Weather API <a name="about-project"></a>
 
 .com provides access to free weather and geo data via a JSON/XML restful API.
 
