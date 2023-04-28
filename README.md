@@ -83,6 +83,10 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 [You can see the project](https://weather-api-h048.onrender.com/)
 
+## 🚀 Video about the project <a name="live-demo"></a>
+
+[you can see the video here](https://www.loom.com/share/7ce8f6260c82470b86a7e3deb1355fca)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
