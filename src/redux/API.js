@@ -1,0 +1,9 @@
+export const APIkey = '593c557b7df54b688db22828231904';
+export const baseURL = 'https://api.weatherapi.com/v1/current.json?key=593c557b7df54b688db22828231904&q=Ethiopia&aqi=no';
+export const forecast = 'https://api.weatherapi.com/v1/forecast.json?key=593c557b7df54b688db22828231904&q=Ethiopia&days=1&aqi=no&alerts=no';
+export const search = 'https://api.weatherapi.com/v1/search.json?key=593c557b7df54b688db22828231904&q=Ethiopia';
+export const future = 'https://api.weatherapi.com/v1/future.json?key=593c557b7df54b688db22828231904&q=Ethiopia&dt=2023-05-26';
+export const astronomy = 'https://api.weatherapi.com/v1/astronomy.json?key=593c557b7df54b688db22828231904&q=Ethiopia&dt=2023-04-26';
+export const timezone = 'https://api.weatherapi.com/v1/timezone.json?key=593c557b7df54b688db22828231904&q=Ethiopia';
+export const sports = 'https://api.weatherapi.com/v1/sports.json?key=593c557b7df54b688db22828231904&q=Ethiopia';
+export const history = 'https://api.weatherapi.com/v1/history.json?key=593c557b7df54b688db22828231904&q=Ethiopia&dt=2010-01-01';
